@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./src/styles/reset.css" />
+    <link rel="stylesheet" href="./src/styles/header.css">
+    <link rel="stylesheet" href="./src/styles/global.css">
+    <link rel="stylesheet" href="./src/styles/profile.css">
+    <link rel="stylesheet" href="./src/styles/post.css">
+    <link rel="stylesheet" href="./src/styles/modal.css"
+    
+    <!-- FONTE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Criando rede social</title>
+  </head>
+  <body>
+
+        <!-- /* ------------------------------- Header ------------------------------- */ -->
+
+    <header>
+      <h2 class="logo__header">
+        TechPosters
+      </h2>
+
+      <nav>
+        <span class="span__exit">
+          Sair
+        </span>
+      </nav>
+    </header>
+
+    <main>
+
+          <!-- /* ------------------------------- Profile ------------------------------- */ -->
+
+      <section class="section__profiles">
+        <div class="index__container">
+          <div class="profile__container">
+            <img class="img__profile" src="./src/assets/img/user1.svg" alt="Samuel Leão">
+              <div class="name__container">
+                <h2 class="name__profile"> Samuel Leão</h2>
+                <h3 class="stack__profile">Front end Engineer</h3>
+              </div>
+          </div>
+        
+
+        <form class="form__container">
+          <input class="input__title input__text"
+                        id="title"
+                        type="text"
+                        name="title"
+                        placeholder="Digitar título do post"
+                        >
+
+                        <textarea class="input__text"
+                        id="description"
+                        type="text"
+                        name="text"
+                        placeholder="Digitar descrição do post"
+                        ></textarea>
+
+                        <button class="button__post">
+                          Postar
+                        </button>
+        </form>
+        </div>
+
+        <!-- /* ------------------------------- Suggestions ------------------------------- */ -->
+        <div class="main__container">
+          <h2 class="title__suggestions">Sugestões para voce seguir</h2>
+          <ul class="suggestions__container">
+
+            <!-- <li class="profile__suggestions">
+              <img class="img__profile" src="./src/assets/img/user3.svg" alt="Samuel Leão">
+                <div class="name__container">
+                  <div class="name__button">
+                    <h2 class="name__profile"> Carlos Lima </h2>
+                    <button class="button__follow">
+                      Seguir
+                    </button>
+                  </div>
+                  <h3 class="stack__profile"> UX e UI Desginer </h3>
+                </div>
+            </li>
+
+            <li class="profile__suggestions">
+              <img class="img__profile" src="./src/assets/img/user6.svg" alt="Samuel Leão">
+                <div class="name__container">
+                  <div class="name__button">
+                    <h2 class="name__profile"> Larissa Camargo </h2>
+                    <button class="button__follow">
+                      Seguir
+                    </button>
+                  </div>
+                  <h3 class="stack__profile"> Ul Developer </h3>
+                </div>
+            </li>
+
+            <li class="profile__suggestions">
+              <img class="img__profile" src="./src/assets/img/user7.svg" alt="Samuel Leão">
+                <div class="name__container">
+                  <div class="name__button">
+                    <h2 class="name__profile"> Filipe Gutierry </h2>
+                    <button class="button__follow">
+                      Seguir
+                    </button>
+                  </div>
+                  <h3 class="stack__profile"> Full Stack Developer </h3>
+                </div>
+            </li> -->
+
+          </ul>
+        </div>
+      </section>
+
+        <!-- /* ------------------------------- Posts ------------------------------- */ -->
+
+      <section class="section__posts">
+        <h2 class="title__post">Posts</h2>
+
+        <ul class="post__container">
+
+          <!-- <li class="item__container">
+            <div class="post__profile">
+              <img class="img__post" src="./src/assets/img/user1.svg" alt="Samuel Leão">
+                <div class="name__container">
+                  <h3 class="name__post"> Samuel Leão</h3>
+                  <h4 class="stack__post">Front end Engineer</h4>
+                </div>
+            </div>
+            <span class="subject__post">
+              Empresa de Tecnologia da Informação abre vagas para programa de estágio
+            </span>
+              <p class="text__post">
+                A Generic Digital, empresa natalence especializada em Tecnologia da Informação, irá iniciar o seu sexto programa de estágio, com o prazo de inscrições entre os dias 10 e 28 de agosto. 
+              </p>
+                <div class="button__like">
+                  <button class="open__post">
+                    Abrir Post
+                  </button>
+                  <img class="dislike" src="./src/assets/img/dislike.svg" alt="dislike">
+                </div>
+          </li>
+
+          <li>
+            <div class="post__profile">
+              <img class="img__post" src="./src/assets/img/user1.svg" alt="Samuel Leão">
+                <div class="name__container">
+                  <h3 class="name__post"> Samuel Leão</h3>
+                  <h4 class="stack__post">Front end Engineer</h4>
+                </div>
+            </div>
+            <span class="subject__post">
+              Empresa de Tecnologia da Informação abre vagas para programa de estágio
+            </span>
+              <p class="text__post">
+                A Generic Digital, empresa natalence especializada em Tecnologia da Informação, irá iniciar o seu sexto programa de estágio, com o prazo de inscrições entre os dias 10 e 28 de agosto. 
+              </p>
+                <div class="button__like">
+                  <button class="open__post">
+                    Abrir Post
+                  </button>
+                  <img class="dislike" src="./src/assets/img/dislike.svg" alt="dislike">
+                </div>
+          </li>  -->
+
+
+        </ul>
+
+      </section>
+
+      <dialog class="modal__container"></dialog>
+    </main>
+
+  </body>
+    <script type="module" src="./src/scripts/index.js"></script>
+</html>

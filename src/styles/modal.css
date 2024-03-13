@@ -1,0 +1,68 @@
+.modal__container{
+    width: 90%;
+}
+
+.div__modal{
+    display: flex;
+    flex-direction: column;
+
+    gap: 30px;
+
+    position: relative;
+}
+
+.profile__modal{
+    display: flex;
+
+    gap: 10px;
+}
+
+.image__modal{
+    width: 52px;
+    height: 52px;
+}
+
+.organization__modal{
+    display: flex;
+    flex-direction: column;
+}
+
+.name__modal{
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.stack__modal{
+    font-size: 0.875rem;
+}
+
+.topic__modal{
+    font-size: 1.75rem;
+    font-weight: 700;
+
+    width: 90%;
+}
+
+.text__modal{
+    font-size: 1rem;
+    font-weight: 400;
+
+    width: 90%;
+}
+
+.close__modal{
+    width: 20px;
+    height: 20px;
+
+    background-color: var(--color-grey-5);
+
+    position: absolute;
+    top: 12px;
+    right: 12px;
+}
+
+@media (min-width: 770px){
+    .modal__container{
+        width: 30%;
+    }
+}

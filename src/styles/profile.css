@@ -1,0 +1,210 @@
+.section__profiles{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    padding-top: 120px;
+}
+
+/* ------------------------------- Profile ------------------------------- */
+
+
+.index__container{
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+
+    padding-bottom: 60px;
+}
+
+.profile__container{
+    display: flex;
+    align-items: center;
+    
+    gap: 10px;
+
+    width: 90%;
+
+    margin: 0 auto;
+}
+
+.img__profile{
+    width: 52px;
+    height: 52px;
+}
+
+.name__profile{
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.stack__profile{
+    font-size: 0.875rem;
+}
+
+.form__container{
+    display: flex;
+    flex-direction: column;
+
+    gap: 22px;
+}
+
+
+.input__text{
+    width: 92%;
+    max-width: 92%;
+    height: 120px;
+    
+    border: 2px solid var(--color-grey-4);
+    border-radius: 4px;
+    
+    font-size: 1rem;
+    
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.input__title{
+    height: 50px;
+}
+
+.button__post{
+    width: 69px;
+    height: 38px;
+
+    padding: 0px 12px;
+
+    margin-right: 6%;
+
+    background-color: var(--color-grey-4);
+    color: var(--color-grey-3);
+
+    font-weight: bold;
+    font-size: 0.875rem;
+
+    align-self: flex-end;
+}
+
+.button__post:hover{
+    background-color: var(--color-blue-1);
+    color: var(--color-grey-6);
+}
+
+
+/* ------------------------------- Suggestions ------------------------------- */
+
+.title__suggestions{
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding-bottom: 30px;
+
+    width: 90%;
+
+    margin: 0 auto;
+}
+
+.suggestions__container{
+    display: flex;
+    flex-direction: row;
+
+    gap: 70px;
+
+    width: 90%;
+
+    margin: 0 auto;
+
+    overflow-x: scroll;
+
+    padding-bottom: 20px;
+}
+
+.profile__suggestions{
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.name__container{
+    display: flex;
+    flex-direction: column;
+}
+
+.name__button{
+    display: flex;
+}
+
+.button__follow{
+    padding: 0px 12px;
+
+    width: 90px;
+
+    background-color: transparent;
+    color: var(--color-grey-1);
+
+    border: 1px solid var(--color-grey-1);
+    border-radius: 2px;
+
+    font-size: 0.875rem;
+    font-weight: bold;
+}
+
+.button__follow:hover{
+    background-color: var(--color-blue-3);
+    color: var(--color-blue-1);
+
+    border-color: var(--color-blue-1);
+}
+
+.button__following{
+    background-color: var(--color-blue-1);
+    color: var(--color-grey-6);
+
+    border:transparent ;
+}
+
+.name__profile{
+    width: 220px;
+}
+
+@media (min-width: 770px){
+
+    .section__profiles{
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+        
+        margin: 0 auto;
+    }
+
+/* ------------------------------- Profile ------------------------------- */
+
+
+    .input__title{
+      max-width: 90%;
+      width:90%;
+    }
+
+    .input__text{
+      width: 90% ;
+      max-width: 90% 
+}
+
+    .index__container{
+        width: 50%;
+    }
+
+    .main__container{
+        width: 33%;
+    }
+
+/* ------------------------------- Suggestions ------------------------------- */
+
+    .suggestions__container{
+        flex-direction: column;
+        overflow-x: hidden;
+        
+        width: 100%;
+    }
+}

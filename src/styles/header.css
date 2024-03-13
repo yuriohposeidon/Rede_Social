@@ -1,0 +1,29 @@
+header{
+    width: 100vw;
+    
+    background-color: var(--color-grey-1);
+    color: var(--color-grey-6);
+    
+    padding: 20px 50px;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    box-shadow: var(--color-grey-opacity);
+
+    position: fixed;
+}
+
+.logo__header{
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+
+.span__exit{
+    font-size: 0.875rem;
+    font-weight: 400;
+
+    cursor: pointer;
+}
